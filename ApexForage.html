@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #000000, #262ba2);
+            color: #FFFFFF;
+            text-align: center;
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+        header {
+            background: linear-gradient(90deg, #000000, #262ba2);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .logo img {
+            height: 70px; /* Responsive logo size */
+            width: auto;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: 0.3s;
+            border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover {
+            border-bottom: 2px solid white;
+        }
+        .container {
+            padding: 50px;
+        }
+        .section {
+            padding: 120px 20px; /* Adjusted padding for header visibility */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #home, #about, #blogs, #contact {
+            background: linear-gradient(90deg, #000000, #262ba2);
+        }
+        .button {
+            background-color: #1F4068;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #1B3A57;
+        }
+        .contact-form {
+            background-color: #112240;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #1F4068;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #1B3A57;
+        }
+        footer {
+            background-color: linear-gradient(90deg, #000000, #3533cd);
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .nav-links {
+                margin-top: 10px;
+            }
+            .nav-links a {
+                font-size: 16px;
+                padding: 5px;
+            }
+            .section {
+                padding: 140px 15px; /* Adjusted padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="C:\Users\USER\Desktop\ApexForage\l1.png" alt="Apex Forage Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <div id="home" class="section">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; max-width: 1200px; margin: auto;">
+            
+            <!-- Text Content -->
+            <div style="flex: 1; min-width: 300px; text-align: left;">
+                <h1 style="font-size: 60px; margin-bottom: 10px;">Welcome to the      Apex Forage Community</h1>
+                <h2 style="font-size: 24px; color: #FFD700; margin-bottom: 20px;">Empowering Students. Shaping Professionals.</h2>
+                <p style="font-size: 21px; line-height: 1.6;">
+                    We’re on a mission to guide students into becoming skilled professionals through collaboration, mentorship, and real-world experience.
+                </p>
+                <a href="#contact" class="button" style="margin-top: 30px;">Join the Journey</a>
+            </div>
+    
+            <!-- Image -->
+            <div style="flex: 1; min-width: 400px;">
+                <img src="C:\Users\USER\Desktop\ApexForage\2r.png" 
+                     alt="Students working together" 
+                     style="width: 120%; border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="about" class="section">
+        <h1>From Learners to Leaders</h1>
+        <p style="max-width: 700px; margin: auto; font-size: 18px;">
+            At Community Hub, we empower students to become professionals by nurturing their skills, fostering collaboration, and guiding them to thrive in their chosen fields.
+        </p>
+    
+        <blockquote style="margin: 30px auto; font-size: 20px; font-style: italic; color: #FFD700;">
+            "Our main motto is to make students professionals in their respective domains."
+        </blockquote>
+    
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 30px;">
+            <div style="background-color: #1F4068; padding: 20px; border-radius: 15px; width: 250px;">
+                <h3>🤝 Connect</h3>
+                <p>Meet mentors, peers, and industry experts who share your passion and purpose.</p>
+            </div>
+            <div style="background-color: #1F4068; padding: 20px; border-radius: 15px; width: 250px;">
+                <h3>🚀 Grow</h3>
+                <p>Gain practical knowledge and real-world skills that set you apart professionally.</p>
+            </div>
+            <div style="background-color: #1F4068; padding: 20px; border-radius: 15px; width: 250px;">
+                <h3>🎯 Achieve</h3>
+                <p>Turn your passion into a career path with the support of our growing community.</p>
+            </div>
+        </div>
+    
+        <div style="margin-top: 30px;">
+            <img src="C:\Users\USER\Desktop\ApexForage\s1.png" alt="Community Image" style="max-width: 65%; height: auto; border-radius: 10px;">
+        </div>
+    
+        <div style="margin-top: 40px;">
+            <a href="#contact" class="button">Join Now</a>
+        </div>
+    </div>
+    
+
+    <div id="blogs" class="section">
+        <h1 style="font-size: 36px; margin-bottom: 20px;">Our Latest Blogs</h1>
+        <p style="font-size: 18px; margin-bottom: 40px;">Explore insightful articles from our community.</p>
+    
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px; margin: auto;">
+    
+            <!-- Blog 1 -->
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background-color: #112240; padding: 15px; border-radius: 10px; text-align: left;">
+                <img src="C:\Users\USER\Desktop\ApexForage\s1.png" alt="Blog 1" style="width: 100%; border-radius: 8px;">
+                <h2 style="font-size: 20px; margin: 15px 0;">Blog Title 1</h2>
+                <p style="font-size: 16px; line-height: 1.5;">A short preview of the blog content... </p>
+                <a href="https://medium.com/@yourprofile/blog-link-1" target="_blank" 
+                   style="display: block; margin-top: 10px; color: #FFD700; font-weight: bold;">Read More →</a>
+            </div>
+    
+            <!-- Blog 2 -->
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background-color: #112240; padding: 15px; border-radius: 10px; text-align: left;">
+                <img src="C:\Users\USER\Desktop\ApexForage\s1.png" alt="Blog 2" style="width: 100%; border-radius: 8px;">
+                <h2 style="font-size: 20px; margin: 15px 0;">Blog Title 2</h2>
+                <p style="font-size: 16px; line-height: 1.5;">A short preview of the blog content... </p>
+                <a href="https://medium.com/@yourprofile/blog-link-2" target="_blank" 
+                   style="display: block; margin-top: 10px; color: #FFD700; font-weight: bold;">Read More →</a>
+            </div>
+    
+            <!-- Blog 3 -->
+            <div style="flex: 1; min-width: 300px; max-width: 350px; background-color: #112240; padding: 15px; border-radius: 10px; text-align: left;">
+                <img src="C:\Users\USER\Desktop\ApexForage\s1.png" alt="Blog 3" style="width: 100%; border-radius: 8px;">
+                <h2 style="font-size: 20px; margin: 15px 0;">Blog Title 3</h2>
+                <p style="font-size: 16px; line-height: 1.5;">A short preview of the blog content... </p>
+                <a href="https://medium.com/@yourprofile/blog-link-3" target="_blank" 
+                   style="display: block; margin-top: 10px; color: #FFD700; font-weight: bold;">Read More →</a>
+            </div>
+    
+        </div>
+    
+        <!-- View All Blogs Button -->
+        <a href="https://medium.com/@yourprofile" target="_blank" 
+           style="display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #1F4068; color: white; border-radius: 5px; text-decoration: none;">
+           View All Blogs
+        </a>
+    </div>
+    
+
+    <div id="contact" class="section">
+        <h1>Contact Us</h1>
+        <div class="contact-form">
+            <form action="mailto:your-vyshakmanju18@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="subject" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Apex Forage. All rights reserved.
+    </footer>
+</body>
+</html>
